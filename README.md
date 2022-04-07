@@ -23,9 +23,9 @@
 
 테스트 코드 작성
 
-### 
-![image](https://user-images.githubusercontent.com/65703902/162137387-73647012-0f54-41d5-a22c-0abf26316f49.png)
-
+### ERD
+<img width="60%" alt="ERD" src="![ss](https://user-images.githubusercontent.com/65703902/162138223-3b203c26-dc15-4640-a209-ae5f53014c12.JPG)
+">
 
 ### 화면구성
 
