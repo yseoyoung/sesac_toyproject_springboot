@@ -23,7 +23,7 @@
 
 테스트 코드 작성
 
-### DB
+### 
 ![image](https://user-images.githubusercontent.com/65703902/162137387-73647012-0f54-41d5-a22c-0abf26316f49.png)
 
 
