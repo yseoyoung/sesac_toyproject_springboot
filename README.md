@@ -11,6 +11,7 @@
 - Data Base: MySQL
 - Build Tool: Maven
 
+
 ### 주요기능
 
 스프링 시큐리티를 이용한 회원가입 및 로그인, 로그아웃 기능 구현
@@ -82,6 +83,7 @@
 
 <img width="60%" alt="구매" src="https://user-images.githubusercontent.com/97068969/162143602-76878fa0-7596-409c-9527-94ef02bd378f.PNG">
 ✔장바구니 페이지에서 주문시 구매이력 페이지로 리다이렉트
+
 ✔주문 취소 기능 구현 -> 주문 취소된 수량은 다시 상품 수량으로 플러스
 
 <br/>
