@@ -34,7 +34,6 @@
 <br/>
 <br/>
 <br/>
-<hr>
 
 <img width="60%" alt="상품리스트" src="https://user-images.githubusercontent.com/97068969/162135375-53e780e2-a5db-422d-8990-8ce07abe6a50.PNG">
 ✔상품 리스트
@@ -94,50 +93,6 @@
 <br/>
 <br/>
 
-
-
-### 트러블슈팅
-
-<details>
-<summary>로그인 실패 시 에러 메세지 출력 후 다시 로그인 페이지로 이동이 되지 않음</summary>
-<div markdown="1">       
-<br>
-  
-  ✔  <b>해결방법</b>
-  
-  ![image](https://user-images.githubusercontent.com/65703902/162134535-92ab14b9-06cc-490b-b5dc-76a26cdfda11.png)
-  
-기존에는 ajax 요청만 고려해서 UNAUTHORIZED 에러를 반환하도록 하였는데, ajax의 경우 request header에 XMLHttpRequest 라는 값이 세팅돼서 나옴. 그럴 경우만 UNAUTHORIZED 에러를 반환하고, 나머지 경우는 로그인 페이지로 리다이렉트 해줘야 함.
-
-</div>
-</details>
-
-<details>
-<summary>NoSuchMethodError 문제</summary>
-<div markdown="1">       
-<br>
-  
-  members/new를 실행 시
-
-```
-
-Cannot render error page for request [/members/new] and exception [org.thymeleaf.context.IWebContext.getExchange()Lorg/thymeleaf/web/IWebExchange;] as the response has already been committed. As a result, the response may have the wrong status code.
-
-```
-
-member/login 실행 시
-
-```
-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.NoSuchMethodError: org.thymeleaf.context.IWebContext.getExchange()Lorg/thymeleaf/web/IWebExchange;] with root cause
-
-```
-  
-✔  <b>해결방법</b>
-  
-  버전 문제.  build.gradle에서 implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5' 으로 implementation
-  
-</div>
-</details>
 
 ### 개선점
 
